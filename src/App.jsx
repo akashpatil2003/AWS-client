@@ -28,7 +28,7 @@ const App = () => {
     <BrowserRouter>
       <AuthContext>
         <Routes>
-          <Route path="/" element={<Navigate to="/admin-dashboard" />} />
+          <Route path="/" element={<Navigate to="login" />} />
 
           <Route path="/admin-dashboard" element={
             <PrivateRoutes >
