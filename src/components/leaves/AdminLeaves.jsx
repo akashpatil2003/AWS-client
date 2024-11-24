@@ -8,7 +8,7 @@ const AdminLeaves = () => {
   const [filteredLeaves, setFilteredLeaves] = useState([]);
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get('https://aws-server-amber.vercel.app/api/leave', {
+      const response = await axios.get('https://aws-server-dusky.vercel.app/api/leave', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

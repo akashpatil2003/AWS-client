@@ -27,7 +27,7 @@ const EditEmployee = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`https://aws-server-amber.vercel.app/api/employee/${id}`, {
+        const response = await axios.get(`https://aws-server-dusky.vercel.app/api/employee/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }
@@ -63,7 +63,7 @@ const EditEmployee = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.put(`https://aws-server-amber.vercel.app/api/employee/${id}`, employee, {
+      const response = await axios.put(`https://aws-server-dusky.vercel.app/api/employee/${id}`, employee, {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
         }

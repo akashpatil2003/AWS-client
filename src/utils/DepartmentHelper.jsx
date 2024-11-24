@@ -26,7 +26,7 @@ export const DepartmentHelper = ({ Id, onDepartmentDelete }) => {
       if (!confirmDelete) {
         return;
       }
-      const response = await axios.delete(`https://aws-server-amber.vercel.app/api/department/${id}`, {
+      const response = await axios.delete(`https://aws-server-dusky.vercel.app/api/department/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }
