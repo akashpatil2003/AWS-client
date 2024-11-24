@@ -11,7 +11,7 @@ const ViewEmployee = () => {
     const fetchEmployee = async () => {
       setEmpLoading(true);
       try {
-        const response = await axios.get(`https://aws-server-dusky.vercel.app/api/employee/${id}`, {
+        const response = await axios.get(`https://aws-server-fnf7.onrender.com/api/employee/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }

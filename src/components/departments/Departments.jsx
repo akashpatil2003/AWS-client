@@ -15,7 +15,7 @@ const Departments = () => {
   const fetchDepartments = async () => {
     setDepLoading(true);
     try {
-      const response = await axios.get('https://aws-server-dusky.vercel.app/api/department/', {
+      const response = await axios.get('https://aws-server-fnf7.onrender.com/api/department/', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

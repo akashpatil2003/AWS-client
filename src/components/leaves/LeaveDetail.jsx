@@ -10,7 +10,7 @@ const LeaveDetail = () => {
   useEffect(() => {
     const fetchleave = async () => {
       try {
-        const response = await axios.get(`https://aws-server-dusky.vercel.app/api/leave/detail/${id}`, {
+        const response = await axios.get(`https://aws-server-fnf7.onrender.com/api/leave/detail/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }
@@ -29,7 +29,7 @@ const LeaveDetail = () => {
 
   const changeStatus = async (id, status) => {
     try {
-      const response = await axios.put(`https://aws-server-dusky.vercel.app/api/leave/${id}`, { status }, {
+      const response = await axios.put(`https://aws-server-fnf7.onrender.com/api/leave/${id}`, { status }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

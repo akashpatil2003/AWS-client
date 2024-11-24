@@ -41,7 +41,7 @@ const AddSalary = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`https://aws-server-dusky.vercel.app/api/salary/add`, salary, {
+      const response = await axios.post(`https://aws-server-fnf7.onrender.com/api/salary/add`, salary, {
         headers: {
           "Authorization": `Bearer ${localStorage.getItem("token")}`
         }

@@ -10,7 +10,7 @@ const LeavesList = () => {
 
   const fetchLeaves = async () => {
     try {
-      const response = await axios.get(`https://aws-server-dusky.vercel.app/api/leave/${id}`, {
+      const response = await axios.get(`https://aws-server-fnf7.onrender.com/api/leave/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

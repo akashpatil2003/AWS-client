@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://aws-server-dusky.vercel.app/api/auth/login", { email, password });
+      const response = await axios.post("https://aws-server-fnf7.onrender.com/api/auth/login", { email, password });
       if (response.status === 200) {
         login(response.data.user);
         localStorage.setItem("token", response.data.token);

@@ -11,7 +11,7 @@ const EditDepart = () => {
     const fetchDepartment = async () => {
       setDepLoading(true);
       try {
-        const response = await axios.get(`https://aws-server-dusky.vercel.app/api/department/${id}`, {
+        const response = await axios.get(`https://aws-server-fnf7.onrender.com/api/department/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`
           }
@@ -39,7 +39,7 @@ const EditDepart = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`https://aws-server-dusky.vercel.app/api/department/${id}`, department, {
+      const response = await axios.put(`https://aws-server-fnf7.onrender.com/api/department/${id}`, department, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`
         }

@@ -25,7 +25,7 @@ const Settings = () => {
       setError("Passwords do not match");
     } else {
       try {
-        const response = await axios.put("https://aws-server-dusky.vercel.app/api/setting/change-password", setting, {
+        const response = await axios.put("https://aws-server-fnf7.onrender.com/api/setting/change-password", setting, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
