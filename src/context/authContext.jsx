@@ -15,7 +15,7 @@ const AuthContext = ({ children }) => {
       try {
         const token = localStorage.getItem("token");
         if (token) {
-          const response = await axios.get(`http://localhost:3000/api/auth/verify`, { headers: { Authorization: `Bearer ${token}` } });
+          const response = await axios.get(`https://aws-server-amber.vercel.app/api/auth/verify`, { headers: { Authorization: `Bearer ${token}` } });
           if (response.data.success) {
             setUser(response.data.user);
           }
