@@ -75,7 +75,7 @@ const LeaveDetail = () => {
             <p className="font-medium">{new Date(leave.startDate).toLocaleDateString()}</p>
           </div>
           <div className="flex space-x-3 mb-5">
-            <p className="text-lg font-bold">Start Date:</p>
+            <p className="text-lg font-bold">End Date:</p>
             <p className="font-medium">{new Date(leave.endDate).toLocaleDateString()}</p>
           </div>
           <div className="flex space-x-3 mb-5 items-center">
