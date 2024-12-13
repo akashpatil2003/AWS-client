@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaBuilding, FaCogs, FaMoneyBillWave, FaTachometerAlt, FaUsers } from 'react-icons/fa'
+import { FaBuilding, FaCalendarAlt, FaCogs, FaEnvelopeOpenText, FaMoneyBillWave, FaTachometerAlt, FaTextHeight, FaUsers } from 'react-icons/fa'
 
 
 const AdminSideBar = () => {
@@ -25,12 +25,16 @@ const AdminSideBar = () => {
           <span>Departments</span>
         </NavLink>
         <NavLink to="/admin-dashboard/leaves" className={({ isActive }) => `${isActive ? "bg-coral-red scale-105" : ""} flex items-center space-x-4 block py-2.5 px-4 rounded-lg hover:scale-105 duration-200 text-xl`}>
-          <FaBuilding />
+          <FaEnvelopeOpenText />
           <span>Leaves</span>
         </NavLink>
         <NavLink to="/admin-dashboard/salary/add" className={({ isActive }) => `${isActive ? "bg-coral-red scale-105" : ""} flex items-center space-x-4 block py-2.5 px-4 rounded-lg hover:scale-105 duration-200 text-xl`}>
           <FaMoneyBillWave />
           <span>Salary</span>
+        </NavLink>
+        <NavLink to="/admin-dashboard/attendance" className={({ isActive }) => `${isActive ? "bg-coral-red scale-105" : ""} flex items-center space-x-4 block py-2.5 px-4 rounded-lg hover:scale-105 duration-200 text-xl`}>
+          <FaCalendarAlt />
+          <span>Attendance</span>
         </NavLink>
         <NavLink to="/admin-dashboard/setting" className={({ isActive }) => `${isActive ? "bg-coral-red scale-105" : ""} flex items-center space-x-4 block py-2.5 px-4 rounded-lg hover:scale-105 duration-200 text-xl`}>
           <FaCogs />

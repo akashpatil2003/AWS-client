@@ -22,6 +22,7 @@ import Settings from "./components/employeeDashboard/Settings";
 import AdminLeaves from "./components/leaves/AdminLeaves";
 import LeaveDetail from "./components/leaves/LeaveDetail";
 import AdminSetting from "./components/dashboard/AdminSetting";
+import Attendance from "./components/dashboard/Attendance";
 
 const App = () => {
   return (
@@ -55,6 +56,8 @@ const App = () => {
             <Route path="/admin-dashboard/department/:id" element={<EditDepart />} />
 
             <Route path="/admin-dashboard/salary/add" element={<AddSalary />} />
+
+            <Route path="/admin-dashboard/attendance" element={<Attendance />} />
 
             <Route path="/admin-dashboard/setting" element={<AdminSetting />} />
 
