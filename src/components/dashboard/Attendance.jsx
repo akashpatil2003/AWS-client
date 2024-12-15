@@ -19,7 +19,7 @@ const EmployeeList = () => {
     const fetchAttendances = async () => {
       setLoading(true);
       try {
-        const response = await axios.get('http://localhost:3000/api/attendance');
+        const response = await axios.get('https://aws-server-fnf7.onrender.com/api/attendance');
         console.log(response.data.attendances);
 
         if (response.data.success) {
